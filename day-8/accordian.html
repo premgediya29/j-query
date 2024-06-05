@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accodian</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .border{
+            width: 60%;
+            height: auto;
+            border: 1px solid black;
+        }
+        .a{
+            cursor: pointer;
+        }
+        .b{
+            cursor: pointer;
+        }
+        .c{
+            cursor: pointer;
+        }
+        .s{
+            display: none;
+        }
+        .q{
+            display: none;
+        }
+        .r{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="border">
+    
+        <h1 class="a">what is your favorite language..?</h1>
+        <p class="s">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit maxime ullam doloremque, quos eum quo doloribus! Illo earum dolorum laboriosam quod accusantium dolor officia pariatur fugit, harum eligendi quas optio!</p>
+   
+    
+        <h1 class="b">what is your favorite language..?</h1>
+        <p class="q">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit maxime ullam doloremque, quos eum quo doloribus! Illo earum dolorum laboriosam quod accusantium dolor officia pariatur fugit, harum eligendi quas optio!</p>
+   
+    
+        <h1 class="c">what is your favorite language..?</h1>
+        <p class="r">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit maxime ullam doloremque, quos eum quo doloribus! Illo earum dolorum laboriosam quod accusantium dolor officia pariatur fugit, harum eligendi quas optio!</p>
+   
+</div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".a").click(function(){
+            $(".s").slideToggle(2000);
+            $(".q").slideUp(2000);
+			$(".r").slideUp(2000);
+        });
+        $(".b").click(function(){
+            $(".q").slideToggle();
+            $(".r").slideUp();
+			$(".s").slideUp();
+        });
+        $(".c").click(function(){
+            $(".r").slideToggle();
+            $(".s").slideUp();
+			$(".q").slideUp();
+        });
+    })
+</script>
+</html>

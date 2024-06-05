@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin panal</title>
+    <link rel="stylesheet" href="css/admin-panel.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+
+    <!-- j-query cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- j-query cdn  -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script><link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <aside>
+            <img src="image/logo.png">
+
+
+        <div class="profile">
+            <img src="image/profile.png">
+            <h1>Mr. Raj Varma</h1>
+            <h6>Full Stack Devloper</h6>
+        </div><br><br><br><br>
+
+
+        <div class="icon">
+            <ul>
+                <li>
+                    <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;<a href="">Info</a>
+                </li>
+                <li>
+                    <i class="fa fa-table"></i>&nbsp;&nbsp;&nbsp;<a href="">Data-Table</a>
+                </li>
+                <li>
+                    <i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;<a href="">Page-Layout</a>
+                </li>
+                <li>
+                    <i class="fa fa-compass"></i>&nbsp;&nbsp;&nbsp;<a href="">Components</a>
+                </li>
+                <li>
+                    <i class="fa fa-flag"></i>&nbsp;&nbsp;&nbsp;<a href="">Report</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header>
+  
+        <div class="button">
+            <input type="text" placeholder="search here.....">
+            <i class="fa fa-search"></i>
+        </div>
+        
+            <div class="font">
+                <i class="fa fa-user-circle" id="circle"></i>
+                <i class="fa fa-bars" id="menu"></i>
+            </div>
+        
+    </header>
+
+    <div class="main" >
+
+      <div class="child">
+        <img src="image/1img.jpg" alt="">
+        <h1> market</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="child">
+          <img src="image/2img.jpg" alt="">
+          <h1> customer</h1>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="child">
+          <img src="image/3img.jpg" alt="">
+          <h1> accounter</h1>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+  
+  
+    <div class="pg1">
+      <div class="pg1m">
+          <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+      </div>
+      <div class="pg1m">
+          <canvas id="Chart" style="width:100%;max-width:700px"></canvas>
+      </div>
+      <div class="pg1m">
+          <canvas id="Chart1" style="width:100%;max-width:700px"></canvas>
+      </div>
+  
+    </div>    
+    <div class="pg2">
+      <div class="pg2m">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.4549290664772!2d70.7821008!3d22.260750599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cba562a8d17f%3A0xa16a8b33b30958f0!2sRed%20%26%20White%20Multimedia%20Education%20-%20Mavdi%20-%20Rajkot!5e0!3m2!1sen!2sin!4v1689844242153!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="pg2m">
+  
+        <main>
+          <div class="calendar-wrapper" id="calendar-wrapper"></div>
+          <!-- <div id="editor"></div> -->
+        </main>
+      </div>
+    </div>
+  
+  
+</body>
+<script>
+    $(document).ready(function(){
+        $("#menu").click(function(){
+           $("aside").toggleClass("hide");
+                $("header").toggleClass("head");
+                    $(".main").toggleClass(".child")
+
+            
+        });
+    });
+</script>
+<script>
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "World Wine Production 2018"
+        }
+      }
+    });
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+    
+    new Chart("Chart", {
+      type: "pie",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "World Wide Wine Production 2018"
+        }
+      }
+    });
+    
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    var yValues = [55, 49, 44, 24, 15];
+    var barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+    
+    new Chart("Chart1", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "World Wide Wine Production 2018"
+        }
+      }
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="calendar.min.js"></script>
+ <script src="calendar.js"></script>
+<script
+  src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+<script type="text/javascript">
+  var config = `
+function selectDate(date) {
+$('#calendar-wrapper').updateCalendarOptions({
+date: date
+});
+console.log(calendar.getSelectedDate());
+}
+
+var defaultConfig = {
+weekDayLength: 1,
+date: '08/05/2021',
+onClickDate: selectDate,
+showYearDropdown: true,
+startOnMonday: false,
+};
+
+var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+console.log(calendar.getSelectedDate());
+`;
+  eval(config);
+  const flask = new CodeFlask('#editor', { 
+    language: 'js', 
+    lineNumbers: true 
+  });
+  flask.updateCode(config);
+  flask.onUpdate((code) => {
+    try {
+      eval(code);
+    } catch(e) {}
+  });
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script defer>
+  fetch('https://raw.githubusercontent.com/wrick17/calendar-plugin/master/README.md')
+    .then(response => response.text())
+    .then(function(text) {
+      const docs = text.split('**DOCS**')[1];
+      document.getElementById('content').innerHTML = `
+      <div>
+        <h2>DOCS</h2>
+        ${marked.parse(docs)}
+      <div>
+      `;
+    });
+</script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Keyboard-events</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h1>this is key press event</h1>
+
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(document).keypress(function(){
+			$("h1").toggle();
+		});
+	});
+</script>
+</html>

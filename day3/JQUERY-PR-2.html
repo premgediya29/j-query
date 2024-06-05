@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add class</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.a{
+			width: 250px;
+			height: 250px;
+			border: 1px solid black;
+			background: lime;
+			font-size: 20px;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="a">This is add class example</div>
+	<button>Click here to toggle class</button>
+
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").toggleClass("a");
+		});
+	});
+</script>
+</html>

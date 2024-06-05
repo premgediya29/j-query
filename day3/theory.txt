@@ -1,0 +1,7 @@
+What is keyboard event..??
+
+process or action done by keyboard
+keypress
+keyup
+keydown
+

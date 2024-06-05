@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slide-toggle</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<style>
+		div{
+			width: 100%;
+			height: 120px;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+
+	<button>Slide Toggle</button>
+	<div></div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div").slideToggle (2000);
+		});
+	});
+</script>
+</html>

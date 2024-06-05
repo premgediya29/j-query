@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pointer</title>
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.curser{
+			width: 10px;
+			height: 10px;
+			border: 1px solid black;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="curser"></div>
+
+
+
+</body>
+<script type="text/javascript">
+	$(document).mousemove(function(e){
+		$(".curser").eq(0).css({left:e.clientX, top:e.clientY});
+	});
+		
+</script>
+</html>

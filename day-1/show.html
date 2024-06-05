@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+    <style>
+        
+            h1{
+                display: none;
+            }
+            
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>this will be show</h1>
+    <button>click to show</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1").show(2000);
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header{
+            width: 100%;
+            height: 120px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        header #toggle{
+            display: none;
+        }
+        .logo{
+            width: 12%;
+            height: 120px;
+            border: 1px solid black;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            width: 50%;
+            height: 120px;
+            border: 1px solid black;
+        }
+        nav ul{
+            display: flex;
+            line-height: 90px;
+            list-style: none;
+            justify-content: space-evenly;
+        }
+        nav ul li{
+            text-decoration: none;
+        }
+        @media(max-width:480px) 
+        {
+            header nav{
+                display: none;
+                width: 70%;
+            } 
+            header #toggle{
+            display: block;
+        }   
+        li{
+           
+            padding-right: 20px;
+            font-size: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+         <i class="fa fa-bars" id="toggle"></i>
+         <nav>
+            <ul>
+                <li>home</li>
+                <li>about us</li>
+                <li>service</li>
+                <li>datail</li>
+                <li>contact us</li>
+            </ul>
+         </nav>
+    </header>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("#toggle").click(function(){
+            $("nav").toggle(2000);
+        });
+    });
+</script>
+</html>

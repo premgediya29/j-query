@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="JQUERY-PR-5 CREATE RESPONSIVE NAVBAR IN BIG HEADER.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <div class="subheader">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <i class="fa fa-bars" id="menu"></i>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+
+        <div class="text">
+            <h1>About US</h1> <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus harum quis modi laborum accusamus, aliquid suscipit eligendi molestias amet cum dolorum enim laudantium porro, recusandae voluptas eveniet culpa repellat eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, laudantium ab? Porro, assumenda, facere corporis vitae voluptas unde minus aspernatur ad odio quis laborum quasi omnis deserunt placeat maxime amet.</p>
+        </div>
+
+    </header>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#menu").click(function(){
+            $("nav").toggle(2000);
+        });
+    });
+</script>
+</html>

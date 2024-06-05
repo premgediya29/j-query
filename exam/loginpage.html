@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+    <link rel="stylesheet" href="loginpage.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body><center>
+    <form>
+        <h1>LOGIN-PAGE</h1>
+		<label>Enter your email:</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" name="" placeholder="Enter your name" id="username"><br>
+		<label>Enter your password:</lable>&nbsp;
+		<input type="password" name=""  required placeholder="Enter your password" id="password"><br><br>
+		<button type="button">Login</button>
+</form></center>
+</body>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var us=document.getElementById("username").value;
+            var pw=document.getElementById("password").value;
+            if(us=="admin" & pw=="123");
+            {
+                window.location.replace(" exam.html");
+            }
+        });
+    });
+</script>
+</html>

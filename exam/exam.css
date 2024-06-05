@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+aside{
+    width: 250px;
+    height: 100vh;
+    /* border: 1px solid black; */
+    float: left;
+    transition: 3s;
+    background-color: gray;
+}
+.hide{
+    margin-left: -250px;
+    transition: 3s;
+}
+header{
+    height: 120px;
+    /* border: 1px solid black; */
+    margin-left: 250px;
+    position: relative;
+    transition: 3s;
+    display: flex;
+    position: relative;
+    background-color: gray;
+}
+header #menu{
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    cursor: pointer;
+}
+.head{
+    margin-left: -250px;
+    transition: 3s;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admit panel</title>
+
+    <link rel="stylesheet" href="admit panel .css">
+
+<!-- icon -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+<!-- icon -->
+
+<!-- jquer -->
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<!-- jquer -->
+
+</head>
+<body>
+
+<aside>
+ <div class="name">
+    <h1>𝐌𝐈𝐇𝐈𝐑 𝐏𝐀𝐓𝐄𝐋</h1>
+ </div>
+<div class="logo">
+    <img src="img/IMG_1812.JPG" alt="">
+
+<h3>
+    kano<br>
+    Full Stack <br>
+    Developer <br>
+</h3>
+</div>
+<nav>
+    <ul>
+         <li><i class="fa-solid fa-chart-line"></i><h3>𝗗𝗮𝘀𝗵𝗯𝗼𝗿𝗱</h3><i class="ri-arrow-down-s-line" id="a"></i></li>
+        <li> <i class="ri-stack-line"></i><h3>𝗣𝗮𝗴𝗲𝘀</h3><i class="ri-arrow-down-s-line" id="a"></i></li>
+         <li><i class="fa-solid fa-table"></i><h3>𝗧𝗮𝗯𝗮𝗹𝗲</h3><i class="ri-arrow-down-s-line" id="a"></i></li>
+         <li><i class="ri-computer-fill"></i><h3>𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁𝘀</h3><i class="ri-arrow-down-s-line" id="a"></i></li>
+        <li> <i class="ri-projector-fill"></i><h3>𝗣𝗿𝗼𝗷𝗲𝗰𝘁𝘀</h3><i class="ri-arrow-down-s-line" id="a"></i></li>
+    </ul>
+</nav>
+</aside>
+<header>  
+     <div class="hed-serch">
+        <input type="search" placeholder="search"><i class="fa-solid fa-magnifying-glass" class="proper"></i>
+     </div>
+      <div class="hed-icon">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-solid fa-bars" id="icon"></i>
+      </div>
+</header>
+<div class="main" >
+
+    <div class="child">
+      <img src="img/market.jpg" alt="">
+      <h1> market</h1>
+      <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="child">
+        <img src="img/customer.jpg" alt="">
+        <h1> customer</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="child">
+        <img src="img/accounter.jpg" alt="">
+        <h1> accounter</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, iure qui voluptates eos in magni ullam eum, ducimus quidem, et tenetur necessitatibus odit cum perferendis quo rerum fugiat optio debitis.</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+
+  <div class="pg1">
+    <div class="pg1m"></div>
+    <div class="pg1m"></div>
+    <div class="pg1m"></div>
+
+  </div>
+
+
+
+    
+</body>
+<script>
+    $(document).ready(function(){
+        $("#icon").click(function(){
+            $("aside").toggleClass("hide");
+            $(".main").toggleClass("add");
+            $("header").toggleClass("show");
+            $("aside").toggleClass("none");
+            
+
+        });
+    });
+    
+    
+    
+    
+    </script>
+</html>

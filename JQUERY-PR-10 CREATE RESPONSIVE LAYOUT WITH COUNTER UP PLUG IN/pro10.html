@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="pro10.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <section class="pg1">
+        <div class="pg1m">
+          <i class="fa-solid fa-user"></i>
+          <h3>FOLLOWERS</h3>
+          <h1 class="count">1500+</h1>
+        </div>
+        <div class="pg1m">
+          <i class="fa-solid fa-phone"></i>
+          <h3>CONTACT</h3>
+          <h1 class="count">400+</h1>
+        </div>
+        <div class="pg1m">
+          <i class="fa-solid fa-heart"></i>
+          <h3>LIKE</h3>
+          <h1 class="count">1000+</h1>
+        </div>
+        <div class="pg1m">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+         
+    
+          <h3>VIEW</h3>
+          <h1 class="count">600+</h1>
+          
+        </div>
+        <div class="pg1m">
+            <i class="fa-brands fa-tiktok"></i>
+           
+      
+            <h3>COUMENT</h3>
+            <h1 class="count">1200+</h1>
+            
+          </div>
+          <div class="pg1m">
+            <i class="fa-brands fa-youtube"></i>
+           
+      
+            <h3>SUBSCRIBE</h3>
+            <h1 class="count">800+</h1>
+            
+          </div>
+          
+      </section>
+    
+</body>
+<SCript>
+    $(document).ready(function() {
+
+var counters = $(".count");
+var countersQuantity = counters.length;
+var counter = [];
+
+for (i = 0; i < countersQuantity; i++) {
+counter[i] = parseInt(counters[i].innerHTML);
+}
+
+var count = function(start, value, id) {
+var localStart = start;
+setInterval(function() {
+if (localStart < value) {
+  localStart++;
+  counters[id].innerHTML = localStart;
+}
+},10);
+}
+
+for (j = 0; j < countersQuantity; j++) {
+count(0, counter[j], j);
+}
+});
+   </SCript>
+
+</html>
